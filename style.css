@@ -1,0 +1,230 @@
+/* NAVBAR STYLE */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #1F2937;
+    height: auto;
+}
+
+label.logo {
+    flex-shrink: 0;
+    color: #F9FAF8;
+    font-size: 24px;
+    line-height: 60px;
+    padding: 0 60px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: #E5E7EB;
+    font-size: 18px;
+    text-transform: lowercase;
+    border-radius: 3px;
+    padding: 7px 12px;
+}
+
+a.active,a:hover {
+    background: #2b394a;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #E5E7EB;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* responsive design von NAVBAR */
+
+@media (max-width:952px) {
+    label.logo{
+        font-size: 18px;
+        padding: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #2c3e50;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        bottom: 0;
+    }
+
+}
+
+/* Hero sec. */
+
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 15px;
+    background-color: #1F2937;
+    box-sizing: border-box;
+    border: none;
+}
+
+.hero-main h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+.hero-main p {
+    color: #F9FAF8;
+}
+
+.hero-main button {
+    color: #F9FAF8;
+    font-weight: bold;
+    background-color: #3882F6;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+}
+.hero-second > img {
+    border-radius: 50%;
+}
+
+/* Info section */
+
+.info h1 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-box  {    
+    height: 160px;
+    width: 160px;
+    border: 2px solid #3882F6;
+    border-radius: 15px;
+}
+.box > p{
+    
+    box-sizing: border-box;
+    color: #1F2937;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* Quote Section */
+
+.quote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+.quote > p {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote > h3 {
+    text-align: right;
+    color: #1F2937;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+
+.foot-section {
+    margin: 100px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3882F6;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.footer, h3, p {
+    color: #F9FAF8;
+    margin: 5px;
+}
+
+.footer button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+    margin: 15px 5px;
+    border: 2px #F9FAF8 solid;
+    border-radius: 5px;
+    padding: 6px 20px;
+    white-space: nowrap;
+}
